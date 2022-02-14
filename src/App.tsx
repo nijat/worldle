@@ -64,8 +64,13 @@ function App() {
               ❔
             </button>
             <h1 className="text-4xl font-bold uppercase tracking-wide text-center my-1 flex-auto">
-              Wor<span className="text-green-600">l</span>dle
+              Şəhərİ Tap
             </h1>
+            <button
+              className="mx-3 text-xl"
+              type="button"
+              onClick={() => setInfoOpen(true)}
+            ></button>
           </header>
           <Game settingsData={settingsData} />
         </div>

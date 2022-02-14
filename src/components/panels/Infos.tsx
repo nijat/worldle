@@ -15,25 +15,23 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
   return (
     <Panel title="OYUN QAYDALARI" isOpen={isOpen} close={close}>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
+        <div>Şəhər və ya rayon adını 6 gedişdə tapın</div>
+        <div>Hər bir təxmin etibarlı şəhər və ya olmalıdır.</div>
         <div>
-          Guess the <Worldle /> in 6 guesses.
-        </div>
-        <div>Each guess must be a valid country, territory, ...</div>
-        <div>
-          After each guess, you will have the distance, the direction and the
-          proximity from your guess and the target country.
+          Hər təxmindən sonra siz təxmin etdiyiniz və hədəf şəhər ilə məsafə,
+          istiqamət və yaxınlıq əldə edəcəksiniz.
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <div className="font-bold">Examples</div>
+        <div className="font-bold">Məsələn</div>
         <div>
           <Guesses
             rowCount={1}
             guesses={[
               {
-                name: "Chile",
-                direction: "NE",
-                distance: 13_557_000,
+                name: "Quba",
+                direction: "SE",
+                distance: 300_000,
               },
             ]}
             settingsData={settingsData}
