@@ -7,10 +7,9 @@ import { useTranslation } from "react-i18next";
 import { InfosFr } from "./components/panels/InfosFr";
 import { Settings } from "./components/panels/Settings";
 import { useSettings } from "./hooks/useSettings";
-import { Worldle } from "./components/Worldle";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const [infoOpen, setInfoOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -67,13 +66,6 @@ function App() {
             <h1 className="text-4xl font-bold uppercase tracking-wide text-center my-1 flex-auto">
               Wor<span className="text-green-600">l</span>dle
             </h1>
-            {/* <button
-              className="mx-3 text-xl"
-              type="button"
-              onClick={() => setSettingsOpen(true)}
-            >
-              ⚙️
-            </button> */}
           </header>
           <Game settingsData={settingsData} />
         </div>
