@@ -4,7 +4,7 @@ import { countriesWithImage, Country } from "../domain/countries";
 
 const forcedCountries: Record<string, string> = {
   "2022-02-02": "TD",
-  "2022-02-03": "PY",
+  "2022-02-14": "AGA",
 };
 
 export function useCountry(dayString: string): [Country, number, number] {
