@@ -117,7 +117,7 @@ export function Game({ settingsData }: GameProps) {
             hideImageMode && !gameEnded ? "h-0" : "h-full"
           }`}
           alt="country to guess"
-          src={`images/regions/${country.code.toLowerCase()}/vector.svg`}
+          src={`images/regions/${country.code.toLowerCase()}/vector.png`}
           style={
             rotationMode && !gameEnded
               ? {
@@ -152,17 +152,6 @@ export function Game({ settingsData }: GameProps) {
               hideImageMode={hideImageMode}
               rotationMode={rotationMode}
             />
-            <a
-              className="underline w-full text-center block mt-4"
-              href={`https://www.google.com/maps?q=${getCountryName(
-                i18n.resolvedLanguage,
-                country
-              )}&hl=${i18n.resolvedLanguage}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("showOnGoogleMaps")}
-            </a>
           </>
         ) : (
           <form onSubmit={handleSubmit}>

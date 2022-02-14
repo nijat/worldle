@@ -67,26 +67,15 @@ function App() {
             <h1 className="text-4xl font-bold uppercase tracking-wide text-center my-1 flex-auto">
               Wor<span className="text-green-600">l</span>dle
             </h1>
-            <button
+            {/* <button
               className="mx-3 text-xl"
               type="button"
               onClick={() => setSettingsOpen(true)}
             >
               ⚙️
-            </button>
+            </button> */}
           </header>
           <Game settingsData={settingsData} />
-          <footer className="flex justify-center text-sm mt-8 mb-1">
-            ❤️ <Worldle />? -
-            <a
-              className="underline pl-1"
-              href="https://www.ko-fi.com/teuteuf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("buyMeACoffee")}
-            </a>
-          </footer>
         </div>
       </div>
     </>

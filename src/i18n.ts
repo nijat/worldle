@@ -5,13 +5,13 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
-      placeholder: "Country, territory...",
-      guess: "Guess",
-      share: "Share",
+      placeholder: "Şəhər, rayon...",
+      guess: "Təxmin Et",
+      share: "Paylaş",
       showOnGoogleMaps: "👀 on Google Maps",
-      welldone: "Well done!",
-      unknownCountry: "Unknown country!",
-      copy: "Copied results to clipboard",
+      welldone: "Təbriklər!",
+      unknownCountry: "Belə şəhər və ya rayon bazada yoxdu!",
+      copy: "Nəticə kopyalandı",
       showCountry: "🗺️ Show map!",
       cancelRotation: "🌀 Cancel rotation",
       settings: {
