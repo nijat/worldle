@@ -137,7 +137,7 @@ export const countries: Country[] = [
     code: "BAB",
   },
   {
-    name: "Bakı",
+    name: "BakI",
     latitude: 40.3667,
     longitude: 49.8352,
     code: "BA",
@@ -167,7 +167,7 @@ export const countries: Country[] = [
     code: "BIL",
   },
   {
-    name: "Cəbrayıl",
+    name: "CəbrayIl",
     latitude: 39.4,
     longitude: 47.0261,
     code: "CAB",
@@ -233,7 +233,7 @@ export const countries: Country[] = [
     code: "GOYT",
   },
   {
-    name: "Hacıqabul",
+    name: "HacIqabul",
     latitude: 40.0375,
     longitude: 48.935,
     code: "HAC",
@@ -251,7 +251,7 @@ export const countries: Country[] = [
     code: "XAN",
   },
   {
-    name: "Xocalı",
+    name: "XocalI",
     latitude: 39.9111,
     longitude: 46.7892,
     code: "XCI",
@@ -263,13 +263,13 @@ export const countries: Country[] = [
     code: "XVD",
   },
   {
-    name: "Xırdalan",
+    name: "XIrdalan",
     latitude: 40.4486,
     longitude: 49.7564,
     code: "XIR",
   },
   {
-    name: "Xızı",
+    name: "XIZI",
     latitude: 40.9111,
     longitude: 49.0694,
     code: "XIZ",
@@ -287,7 +287,7 @@ export const countries: Country[] = [
     code: "IMI",
   },
   {
-    name: "İsmayıllı",
+    name: "İsmayIllI",
     latitude: 40.7839,
     longitude: 48.1439,
     code: "ISM",
@@ -335,7 +335,7 @@ export const countries: Country[] = [
     code: "QBA",
   },
   {
-    name: "Qubadlı",
+    name: "QubadlI",
     latitude: 39.3439,
     longitude: 46.5797,
     code: "QBI",
@@ -347,7 +347,7 @@ export const countries: Country[] = [
     code: "QUS",
   },
   {
-    name: "Laçın",
+    name: "LaçIn",
     latitude: 39.6408,
     longitude: 46.5469,
     code: "LAC",
@@ -365,7 +365,7 @@ export const countries: Country[] = [
     code: "LAN",
   },
   {
-    name: "Masallı",
+    name: "MasallI",
     latitude: 39.0183,
     longitude: 48.6669,
     code: "MAS",
@@ -383,7 +383,7 @@ export const countries: Country[] = [
     code: "NEF",
   },
   {
-    name: "Naxçıvan",
+    name: "NaxçIvan",
     latitude: 39.2092,
     longitude: 45.4122,
     code: "NV",
@@ -407,7 +407,7 @@ export const countries: Country[] = [
     code: "ORD",
   },
   {
-    name: "Saatlı",
+    name: "SaatlI",
     latitude: 39.9311,
     longitude: 48.3697,
     code: "SAT",
@@ -437,7 +437,7 @@ export const countries: Country[] = [
     code: "SIY",
   },
   {
-    name: "Sumqayıt",
+    name: "SumqayIt",
     latitude: 40.5917,
     longitude: 49.6397,
     code: "SM",
@@ -455,7 +455,7 @@ export const countries: Country[] = [
     code: "SAH",
   },
   {
-    name: "Şamaxı",
+    name: "ŞamaxI",
     latitude: 40.6339,
     longitude: 48.6392,
     code: "SMI",
@@ -509,7 +509,7 @@ export const countries: Country[] = [
     code: "UCA",
   },
   {
-    name: "Yardımlı",
+    name: "YardIMLI",
     latitude: 38.9206,
     longitude: 48.2372,
     code: "YAR",
@@ -549,11 +549,7 @@ export function getCountryName(language: string, country: Country) {
 }
 
 export function sanitizeCountryName(countryName: string): string {
-  const result = countryName
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[- '()]/g, "")
-    .toLowerCase();
+  const result = countryName.toLowerCase();
   console.log(result);
   return result;
 }
