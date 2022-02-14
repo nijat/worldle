@@ -7,7 +7,8 @@ import { useTranslation } from "react-i18next";
 import { InfosFr } from "./components/panels/InfosFr";
 import { Settings } from "./components/panels/Settings";
 import { useSettings } from "./hooks/useSettings";
-
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 function App() {
   const { i18n } = useTranslation();
 
@@ -15,6 +16,17 @@ function App() {
   const [settingsOpen, setSettingsOpen] = useState(false);
 
   const [settingsData, updateSettings] = useSettings();
+  const firebaseConfig = {
+    apiKey: "AIzaSyARrzju1wb5iwwW7tsglNLjoezaV43Kn2o",
+    authDomain: "sheheritap.firebaseapp.com",
+    projectId: "sheheritap",
+    storageBucket: "sheheritap.appspot.com",
+    messagingSenderId: "530902927771",
+    appId: "1:530902927771:web:12f91f491ceeba6b6db93e",
+    measurementId: "G-ZQK5FS6BTW",
+  };
+  const app = initializeApp(firebaseConfig);
+  getAnalytics(app);
 
   useEffect(() => {
     if (settingsData.theme === "dark") {
