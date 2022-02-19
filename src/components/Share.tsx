@@ -11,7 +11,7 @@ import { Guess } from "../domain/guess";
 import React from "react";
 import { SettingsData } from "../hooks/useSettings";
 
-const START_DATE = DateTime.fromISO("2022-01-21");
+const START_DATE = DateTime.fromISO("2022-02-18");
 
 interface ShareProps {
   guesses: Guess[];
@@ -53,7 +53,7 @@ export function Share({
       })
       .join("\n");
 
-    return [title, guessString, "https://city.sozutap.com"].join("\n");
+    return [title, guessString, "city.sozutap.com"].join("\n");
   }, [dayString, guesses, hideImageMode, rotationMode, theme]);
 
   return (

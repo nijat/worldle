@@ -72,9 +72,7 @@ function App() {
               className="mx-3 text-xl"
               type="button"
               onClick={() => setInfoOpen(true)}
-            >
-              ❔
-            </button>
+            ></button>
             <h1 className="text-4xl font-bold uppercase tracking-wide text-center my-1 flex-auto">
               Şəhərİ Tap
             </h1>

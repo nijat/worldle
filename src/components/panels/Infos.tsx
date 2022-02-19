@@ -37,8 +37,8 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             settingsData={settingsData}
           />
           <div className="my-2">
-            Your guess <span className="uppercase font-bold">Chile</span> is{" "}
-            {formatDistance(13557000, settingsData.distanceUnit)} away from the
+            <span className="uppercase font-bold">Quba</span> Şəhəri{" "}
+            {formatDistance(135570, settingsData.distanceUnit)} away from the
             target country, the target country is in the North-East direction
             and you have a only 32% of proximity because it&apos;s quite far
             away!
