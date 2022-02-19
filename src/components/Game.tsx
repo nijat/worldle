@@ -112,7 +112,7 @@ export function Game({ settingsData }: GameProps) {
         </button>
       )}
       <div className="my-4"></div>
-      {/* <div className="my-1">
+      <div className="my-1" hidden>
         <img
           className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${
             hideImageMode && !gameEnded ? "h-0" : "h-full"
@@ -127,7 +127,7 @@ export function Game({ settingsData }: GameProps) {
               : {}
           }
         />
-      </div> */}
+      </div>
       {rotationMode && !hideImageMode && !gameEnded && (
         <button
           className="border-2 uppercase mb-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
